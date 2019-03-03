@@ -9,3 +9,6 @@ Gebruik steeds de laatste versie van de snippet die we gebruiken in de lessen DP
 
 ## Maak eventueel je eigen snippets 
 https://code.visualstudio.com/docs/editor/userdefinedsnippets
+
+## Versie
+*2019-02-03: DOMContentLoaded / Fetch / Use strict
