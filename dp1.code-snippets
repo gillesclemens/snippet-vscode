@@ -1,0 +1,45 @@
+{
+  "DOM_Content_Loaded_Event": {
+    "prefix": "dp1-dom-content-loaded-event",
+    "scope": "javascript",
+    "body": [
+      "document.addEventListener('DOMContentLoaded', function() {",
+      "\tconsole.info('DOM geladen');",
+      "\t$0",
+      "});"
+    ],
+    "description": "dom load event"
+  },
+  "Fetch-API": {
+    "prefix": "dp1-fetch-api",
+    "scope": "javascript",
+    "body": [
+      "const ${1:laadData} = function() {",
+      "\tfetch('${2:http://}')",
+      "\t\t.then(function(response) {",
+      "\t\t\tif (!response.ok) {",
+      "\t\t\t\tthrow Error(`Probleem bij de fetch(). Status Code: ${response.status}`);",
+      "\t\t\t} else {",
+      "\t\t\t\tconsole.info('Er is een response teruggekomen van de server');",
+      "\t\t\t\treturn response.json();",
+      "\t\t\t}",
+      "\t\t})",
+      "\t\t.then(function(jsonObject) {",
+      "\t\t\tconsole.info('json object is aangemaakt');",
+      "\t\t\tconsole.info('verwerken data');",
+      "\t\t\t${3:verwerkData(jsonObject)}",
+      "\t\t})",
+      "\t\t.catch(function(error) {",
+      "\t\t\tconsole.error(`fout bij verwerken json ${error}`);",
+      "\t\t});",
+      "};"
+    ],
+    "description": "Fetch api"
+  },
+  "Use-Strict": {
+    "prefix": "dp1-use-strict",
+    "scope": "javascript",
+    "body": ["'use strict';", "", "$0"],
+    "description": "Use strict"
+  }
+}
