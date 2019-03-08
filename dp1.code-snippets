@@ -30,7 +30,7 @@
       "\t\t\t${3:verwerkData(jsonObject)}",
       "\t\t})",
       "\t\t.catch(function(error) {",
-      "\t\t\tconsole.error(`fout bij verwerken json ${error}`);",
+      "\t\t\tconsole.error(`fout bij verwerken json \\${error}`);",
       "\t\t});",
       "};"
     ],
